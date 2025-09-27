@@ -2,30 +2,30 @@
 
 export const FIGMA_ASSETS = {
   // Logo and branding
-  logo: 'http://localhost:3845/assets/dfa3a1a625c075f85436b3e313884ea012241a02.svg',
+  logo: '/assets/vdogate-logo.svg',
 
   // Hero section assets
   heroContent: '/assets/hero_section_content.png',
   heroGraphic: '/assets/hero_graphic_2.png',
 
   // Stars
-  goldStar: 'http://localhost:3845/assets/bf55b194a8f36bd8f4edd810bd082d2350014d1f.png',
+  goldStar: '/assets/gold_star.png',
 
   // Background decorative elements
-  bgVector1: 'http://localhost:3845/assets/88b1ea39dcd05f33033f34fd3d32432d1a4a8d2f.svg',
-  bgVector2: 'http://localhost:3845/assets/2e229cc3670a73b2fc4fe46aa0d065809c7ff97f.svg',
-  bgVector3: 'http://localhost:3845/assets/408dbd2e1ff300a7a5824b0d35a874e7453e4736.svg',
-  bgVector4: 'http://localhost:3845/assets/fea275f50328100078bba411368a27a76c0543d7.svg',
+  bgVector1: '/assets/vector_decoration_1.svg',
+  bgVector2: '/assets/vector_decoration_2.svg',
+  bgVector3: '/assets/vector_decoration_right.svg',
+  bgVector4: '/assets/vector_decoration_top.svg',
 
   // Visual group background vectors
-  visualBgVector1: 'http://localhost:3845/assets/4ea06c81ad62aa507f5343efe55a830aa4fafb6e.svg',
-  visualBgVector2: 'http://localhost:3845/assets/f9d745ad4e8bc4b8918f28937695aa36b8d2c386.svg',
+  visualBgVector1: '/assets/vector2_decoration.svg',
+  visualBgVector2: '/assets/vector3_decoration.svg',
 
   // Decorative elements
-  union: 'http://localhost:3845/assets/759960aa503b7c96dc20433afb298ac16b35d716.svg',
-  ellipse: 'http://localhost:3845/assets/9f08becae742c027ae3af30bbaeb477e9097922a.svg',
-  dots: 'http://localhost:3845/assets/7e61696db99ef246942cbe51ce0f841f3e1c49d4.svg',
-  lines: 'http://localhost:3845/assets/270a348de1b9c010c3983e64970738927981d910.svg',
+  union: '/assets/vector4_decoration.svg',
+  ellipse: '/assets/essential_icons.svg',
+  dots: '/assets/vector2_decoration.svg',
+  lines: '/assets/vector3_decoration.svg',
 } as const;
 
 // Exact Figma positioning values
