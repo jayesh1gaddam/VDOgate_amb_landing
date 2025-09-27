@@ -119,13 +119,14 @@ const Header: React.FC<HeaderProps> = ({ onRegisterClick = () => {} }) => {
       <div className="desktop-hidden tablet-hidden mobile-visible">
         <div className="absolute top-4 left-4 right-4 bg-[#fffcf2] rounded-[14px] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.1)] h-14 flex items-center justify-between px-4 z-50 safe-area-inset">
           <div className="flex items-center">
-            <div className="relative w-28 h-7">
+            <div className="relative w-20 h-5">
               <Image
                 src={FIGMA_ASSETS.logo}
                 alt="VDOgate Logo"
                 fill
-                className="object-contain"
+                className="object-contain object-left"
                 priority
+                style={{ objectFit: 'contain', objectPosition: 'left center' }}
               />
             </div>
           </div>
@@ -267,13 +268,14 @@ const Header: React.FC<HeaderProps> = ({ onRegisterClick = () => {} }) => {
       }`}>
         <div className="bg-[#fffcf2] rounded-[14px] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.1)] h-14 flex items-center justify-between px-4 mx-4 mt-4">
           <div className="flex items-center">
-            <div className="relative w-24 h-6">
+            <div className="relative w-16 h-4">
               <Image
                 src={FIGMA_ASSETS.logo}
                 alt="VDOgate Logo"
                 fill
-                className="object-contain"
+                className="object-contain object-left"
                 priority
+                style={{ objectFit: 'contain', objectPosition: 'left center' }}
               />
             </div>
           </div>

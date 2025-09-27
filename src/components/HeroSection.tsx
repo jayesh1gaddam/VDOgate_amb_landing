@@ -142,7 +142,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className = '' }) => {
 
       {/* Hero Graphics PNG - Exact Figma positioning */}
       <div
-        className="absolute"
+        className="absolute desktop-exact mobile-hidden tablet-hidden"
         style={{
           left: FIGMA_POSITIONS.heroGraphic.left,
           top: FIGMA_POSITIONS.heroGraphic.top,
@@ -165,7 +165,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className = '' }) => {
         onClick={() => window.open('https://form.typeform.com/to/paosFBoY', '_blank')}
         className="absolute bg-[#f7682b] rounded-[20px] border-none cursor-pointer transition-all duration-300 hover:transform hover:-translate-y-0.5
                    hover:shadow-[0px_0px_12.1px_0px_rgba(0,0,0,0.25),0_8px_25px_rgba(247,104,43,0.3)]
-                   shadow-[0px_-4px_4px_0px_inset_rgba(255,252,242,0.31)]"
+                   shadow-[0px_-4px_4px_0px_inset_rgba(255,252,242,0.31)] desktop-exact mobile-hidden tablet-hidden"
         style={{
           left: FIGMA_POSITIONS.heroCTAPrimary.left,
           top: FIGMA_POSITIONS.heroCTAPrimary.top,
@@ -187,7 +187,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className = '' }) => {
       {/* Secondary CTA Button - EXCLUSIVE OPPORTUNITY */}
       <button
         onClick={() => window.open('https://form.typeform.com/to/paosFBoY', '_blank')}
-        className="absolute bg-[rgba(255,255,255,0.1)] rounded-[20px] border-[0.5px] border-solid border-[#f7682b] cursor-pointer transition-all duration-300 hover:transform hover:-translate-y-0.5"
+        className="absolute bg-[rgba(255,255,255,0.1)] rounded-[20px] border-[0.5px] border-solid border-[#f7682b] cursor-pointer transition-all duration-300 hover:transform hover:-translate-y-0.5 desktop-exact mobile-hidden tablet-hidden"
         style={{
           left: FIGMA_POSITIONS.heroCTASecondary.left,
           top: FIGMA_POSITIONS.heroCTASecondary.top,
@@ -300,11 +300,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className = '' }) => {
       </div>
 
       {/* Mobile Hero (320px - 767px) */}
-      <div className={`desktop-hidden tablet-hidden mobile-visible relative w-full h-screen bg-transparent ${className}`}>
-        <div className="px-4 h-full flex flex-col justify-center items-center text-center safe-area-inset">
+      <div className={`desktop-hidden tablet-hidden mobile-visible relative w-full h-screen bg-transparent mobile-container ${className}`}>
+        <div className="mobile-container h-full flex flex-col justify-center items-center text-center safe-area-inset">
 
           {/* Main Content Container */}
-          <div className="relative z-10 w-full max-w-sm mx-auto space-y-3">
+          <div className="relative z-10 w-full max-w-full mx-auto space-y-3 mobile-container">
 
             {/* Title Section */}
             <div className="space-y-1">
