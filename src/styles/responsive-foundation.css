@@ -324,11 +324,19 @@ iframe {
     overflow-wrap: break-word;
   }
 
-  /* Absolute positioned elements - strict mobile constraints */
-  .absolute {
+  /* Absolute positioned elements - refined mobile constraints */
+  .absolute:not(.mobile-preserve) {
     max-width: calc(100vw - 1rem) !important;
     left: 0.5rem !important;
     right: 0.5rem !important;
+    transform: none !important;
+  }
+
+  /* Preserve original positioning for specific mobile elements */
+  .mobile-preserve {
+    max-width: none !important;
+    left: auto !important;
+    right: auto !important;
     transform: none !important;
   }
 
@@ -383,10 +391,16 @@ iframe {
     visibility: visible !important;
   }
 
-  /* Prevent horizontal scrolling from transforms */
-  [style*="transform"],
-  [style*="translate"] {
+  /* Prevent horizontal scrolling from transforms - with exceptions */
+  [style*="transform"]:not(.mobile-preserve),
+  [style*="translate"]:not(.mobile-preserve) {
     transform: none !important;
+  }
+
+  /* Ensure mobile-preserve elements maintain their functionality */
+  .mobile-preserve[style*="transform"],
+  .mobile-preserve[style*="translate"] {
+    transform: revert !important;
   }
 }
 

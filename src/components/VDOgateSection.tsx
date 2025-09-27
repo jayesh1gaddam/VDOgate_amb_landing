@@ -569,7 +569,7 @@ const VDOgateSection: React.FC = () => {
               {/* Card 1: Upload Videos */}
               <div className="bg-[rgba(255,255,255,0.1)] rounded-[12px] p-4 border-3 border-[#f7682b] shadow-lg">
                 <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 relative flex-shrink-0 mt-1">
+                  <div className="w-12 h-12 relative flex-shrink-0 mt-1 aspect-square mobile-preserve">
                     <Image
                       src="/assets/upload_icon.svg"
                       alt=""
@@ -586,7 +586,7 @@ const VDOgateSection: React.FC = () => {
               {/* Card 2: Attract Clients */}
               <div className="bg-[rgba(255,255,255,0.1)] rounded-[12px] p-4 border-3 border-[#f7682b] shadow-lg">
                 <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 relative flex-shrink-0 mt-1">
+                  <div className="w-12 h-12 relative flex-shrink-0 mt-1 aspect-square mobile-preserve">
                     <Image
                       src="/assets/clients_icon.svg"
                       alt=""
@@ -603,7 +603,7 @@ const VDOgateSection: React.FC = () => {
               {/* Card 3: Host Events */}
               <div className="bg-[rgba(255,255,255,0.1)] rounded-[12px] p-4 border-3 border-[#f7682b] shadow-lg">
                 <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 relative flex-shrink-0 mt-1">
+                  <div className="w-12 h-12 relative flex-shrink-0 mt-1 aspect-square mobile-preserve">
                     <Image
                       src="/assets/events_icon.svg"
                       alt=""
@@ -620,7 +620,7 @@ const VDOgateSection: React.FC = () => {
               {/* Card 4: Grow Following */}
               <div className="bg-[rgba(255,255,255,0.1)] rounded-[12px] p-4 border-3 border-[#f7682b] shadow-lg">
                 <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 relative flex-shrink-0 mt-1">
+                  <div className="w-12 h-12 relative flex-shrink-0 mt-1 aspect-square mobile-preserve">
                     <Image
                       src="/assets/growth_icon.svg"
                       alt=""
