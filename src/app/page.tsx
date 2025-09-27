@@ -14,7 +14,6 @@ export default function Home() {
     <div className="relative w-full bg-white">
       {/* Hero Section */}
       <div className="relative w-full h-screen overflow-hidden" style={{ background: '#ffffff' }}>
-        <BackgroundElements />
         <Header />
         <HeroSection />
       </div>
