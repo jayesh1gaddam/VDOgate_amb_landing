@@ -7,9 +7,9 @@ import { FIGMA_ASSETS, FIGMA_POSITIONS } from '@/constants/design';
 const BackgroundElements: React.FC = () => {
   return (
     <>
-      {/* Background Vector Elements - Exact Figma inset positioning */}
+      {/* Background Vector Elements - Hidden on mobile for cleaner look */}
       <div
-        className="absolute"
+        className="absolute mobile-hidden"
         style={{
           top: FIGMA_POSITIONS.bgVectors.vector1.top,
           right: FIGMA_POSITIONS.bgVectors.vector1.right,
@@ -27,7 +27,7 @@ const BackgroundElements: React.FC = () => {
       </div>
 
       <div
-        className="absolute"
+        className="absolute mobile-hidden"
         style={{
           top: FIGMA_POSITIONS.bgVectors.vector2.top,
           right: FIGMA_POSITIONS.bgVectors.vector2.right,
@@ -45,7 +45,7 @@ const BackgroundElements: React.FC = () => {
       </div>
 
       <div
-        className="absolute"
+        className="absolute mobile-hidden"
         style={{
           top: FIGMA_POSITIONS.bgVectors.vector3.top,
           right: FIGMA_POSITIONS.bgVectors.vector3.right,
@@ -63,7 +63,7 @@ const BackgroundElements: React.FC = () => {
       </div>
 
       <div
-        className="absolute"
+        className="absolute mobile-hidden"
         style={{
           top: FIGMA_POSITIONS.bgVectors.vector4.top,
           right: FIGMA_POSITIONS.bgVectors.vector4.right,
@@ -82,7 +82,7 @@ const BackgroundElements: React.FC = () => {
 
       {/* Union Decoration - Exact Figma positioning */}
       <div
-        className="absolute flex items-center justify-center"
+        className="absolute flex items-center justify-center mobile-hidden"
         style={{
           left: FIGMA_POSITIONS.unionDecoration.left,
           top: FIGMA_POSITIONS.unionDecoration.top,
@@ -111,7 +111,7 @@ const BackgroundElements: React.FC = () => {
       {/* Small Decorative Elements - Exact Figma positioning */}
       {/* Dots */}
       <div
-        className="absolute"
+        className="absolute mobile-hidden"
         style={{
           top: FIGMA_POSITIONS.decorativeElements.dot1.top,
           right: FIGMA_POSITIONS.decorativeElements.dot1.right,
@@ -129,7 +129,7 @@ const BackgroundElements: React.FC = () => {
       </div>
 
       <div
-        className="absolute"
+        className="absolute mobile-hidden"
         style={{
           top: FIGMA_POSITIONS.decorativeElements.dot2.top,
           right: FIGMA_POSITIONS.decorativeElements.dot2.right,
@@ -148,7 +148,7 @@ const BackgroundElements: React.FC = () => {
 
       {/* Lines */}
       <div
-        className="absolute"
+        className="absolute mobile-hidden"
         style={{
           top: FIGMA_POSITIONS.decorativeElements.line1.top,
           right: FIGMA_POSITIONS.decorativeElements.line1.right,
@@ -166,7 +166,7 @@ const BackgroundElements: React.FC = () => {
       </div>
 
       <div
-        className="absolute"
+        className="absolute mobile-hidden"
         style={{
           top: FIGMA_POSITIONS.decorativeElements.line2.top,
           right: FIGMA_POSITIONS.decorativeElements.line2.right,
@@ -184,7 +184,7 @@ const BackgroundElements: React.FC = () => {
       </div>
 
       <div
-        className="absolute"
+        className="absolute mobile-hidden"
         style={{
           top: FIGMA_POSITIONS.decorativeElements.line3.top,
           right: FIGMA_POSITIONS.decorativeElements.line3.right,
@@ -202,7 +202,7 @@ const BackgroundElements: React.FC = () => {
       </div>
 
       <div
-        className="absolute"
+        className="absolute mobile-hidden"
         style={{
           top: FIGMA_POSITIONS.decorativeElements.line4.top,
           right: FIGMA_POSITIONS.decorativeElements.line4.right,
