@@ -381,17 +381,19 @@ const PerksForAmbassadors: React.FC = () => {
       </div>
 
       {/* Mobile Perks Section (320px - 767px) */}
-      <div className="desktop-hidden tablet-hidden mobile-visible relative w-full bg-white py-6 min-h-screen">
-        <div className="responsive-container safe-area-inset">
-          {/* Background */}
-          <div className="absolute inset-0 opacity-100 mobile-preserve">
+      <div className="desktop-hidden tablet-hidden mobile-visible relative w-full py-6">
+        <div className="responsive-container">
+          {/* Background - Mobile specific image */}
+          <div className="absolute inset-0 opacity-100" style={{ zIndex: 0 }}>
             <Image
-              src="/assets/perks_background.png"
+              src="/assets/pfa_bg_mb.png"
               alt=""
-              width={375}
-              height={800}
-              className="object-cover object-center w-full h-full"
-              style={{ minHeight: '100vh' }}
+              fill
+              className="object-cover"
+              style={{
+                objectFit: 'cover',
+                objectPosition: 'center center'
+              }}
             />
           </div>
 

@@ -119,14 +119,15 @@ const Header: React.FC<HeaderProps> = ({ onRegisterClick = () => {} }) => {
       <div className="desktop-hidden tablet-hidden mobile-visible">
         <div className="absolute top-4 left-4 right-4 bg-[#fffcf2] rounded-[14px] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.1)] h-14 flex items-center justify-between px-4 z-50 safe-area-inset">
           <div className="flex items-center justify-start">
-            <div className="relative w-24 h-6 mobile-preserve">
+            <div className="relative mobile-preserve">
               <Image
                 src={FIGMA_ASSETS.logo}
                 alt="VDOgate Logo"
-                fill
-                className="object-contain object-left"
+                width={96}
+                height={24}
+                className="object-contain"
                 priority
-                style={{ objectFit: 'contain', objectPosition: 'left center' }}
+                style={{ maxWidth: '96px', height: 'auto' }}
               />
             </div>
           </div>
@@ -268,14 +269,15 @@ const Header: React.FC<HeaderProps> = ({ onRegisterClick = () => {} }) => {
       }`}>
         <div className="bg-[#fffcf2] rounded-[14px] shadow-[0px_0px_6px_0px_rgba(0,0,0,0.1)] h-14 flex items-center justify-between px-4 mx-4 mt-4">
           <div className="flex items-center justify-start">
-            <div className="relative w-20 h-5 mobile-preserve">
+            <div className="relative mobile-preserve">
               <Image
                 src={FIGMA_ASSETS.logo}
                 alt="VDOgate Logo"
-                fill
-                className="object-contain object-left"
+                width={80}
+                height={20}
+                className="object-contain"
                 priority
-                style={{ objectFit: 'contain', objectPosition: 'left center' }}
+                style={{ maxWidth: '80px', height: 'auto' }}
               />
             </div>
           </div>
