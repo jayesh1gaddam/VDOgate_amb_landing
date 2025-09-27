@@ -41,14 +41,14 @@ export const FIGMA_POSITIONS = {
   // Hero CTA buttons
   heroCTAPrimary: {
     left: '77px',
-    top: 'calc(140px + 328px)',
+    top: 'calc(140px + 348px)',
     width: '447px',
     height: '47px',
   },
 
   heroCTASecondary: {
     left: '77px',
-    top: 'calc(140px + 398px)',
+    top: 'calc(140px + 418px)',
     width: '447px',
     height: '47px',
   },

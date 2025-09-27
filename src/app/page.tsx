@@ -6,18 +6,16 @@ import HeroSection from '@/components/HeroSection';
 import BackgroundElements from '@/components/BackgroundElements';
 import VDOgateSection from '@/components/VDOgateSection';
 import AmbassadorBenefitsSection from '@/components/AmbassadorBenefitsSection';
+import PerksForAmbassadors from '@/components/PerksForAmbassadors';
+import Footer from '@/components/Footer';
 
 export default function Home() {
-  const handleRegisterClick = () => {
-    console.log('Register button clicked');
-  };
-
   return (
     <div className="relative w-full bg-white">
       {/* Hero Section */}
       <div className="relative w-full h-screen overflow-hidden" style={{ background: '#ffffff' }}>
         <BackgroundElements />
-        <Header onRegisterClick={handleRegisterClick} />
+        <Header />
         <HeroSection />
       </div>
 
@@ -26,6 +24,12 @@ export default function Home() {
 
       {/* Ambassador Benefits Section */}
       <AmbassadorBenefitsSection />
+
+      {/* Perks for Ambassadors Section */}
+      <PerksForAmbassadors />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

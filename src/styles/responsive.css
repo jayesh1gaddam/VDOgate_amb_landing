@@ -1,0 +1,70 @@
+/* Responsive styles for VDOgate Ambassador Landing Page */
+
+/* Ensure smooth scrolling and proper mobile handling */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Mobile-first media queries */
+@media (max-width: 767px) {
+  /* Hide complex background elements on mobile for performance */
+  .mobile-hidden {
+    display: none !important;
+  }
+
+  /* Ensure sections don't overflow */
+  .section-container {
+    padding: 20px !important;
+    margin: 0 !important;
+  }
+
+  /* Scale down large text for mobile */
+  .large-text {
+    font-size: clamp(24px, 6vw, 44px) !important;
+  }
+
+  /* Make buttons more touch-friendly */
+  button {
+    min-height: 44px;
+    padding: 12px 20px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Tablet optimizations */
+  .tablet-columns {
+    column-count: 2;
+    column-gap: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Desktop - preserve exact Figma positioning */
+  .desktop-exact {
+    position: absolute;
+  }
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent horizontal scroll */
+* {
+  max-width: 100%;
+}
+
+/* Safe area for mobile devices with notches */
+@supports (padding: max(0px)) {
+  .safe-area-padding {
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+  }
+}

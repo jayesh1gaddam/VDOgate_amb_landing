@@ -1,57 +1,31 @@
 // components/VDOgateSection.tsx - Production-ready VDOgate section with exact Figma design
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 
 const VDOgateSection: React.FC = () => {
-  const [scrollY, setScrollY] = useState(0);
-  const [isInView, setIsInView] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-
-      // Check if section is in viewport for tablet animation
-      const sectionElement = document.getElementById('vdogate-section');
-      if (sectionElement) {
-        const rect = sectionElement.getBoundingClientRect();
-        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-        setIsInView(isVisible);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Static tablet - no scroll-based animation
-  const tabletRotation = 10; // Slightly tilted upright position
-  const tabletOpacity = 1; // Fully visible
-  const tabletScale = 0.9; // Normal size
-
-  // Static shadow
-  const shadowIntensity = 0.25;
-  const shadowBlur = 25;
 
   return (
-    <div id="vdogate-section" className="relative w-full bg-white" style={{ height: '832px' }}>
-      {/* Background Frame */}
-      <div
-        className="absolute inset-0"
-        style={{
-          left: '0px',
-          top: '0px',
-          width: '100vw',
-          height: '832px',
-        }}
-      >
-        <Image
-          src="/assets/background_frame.svg"
-          alt=""
-          fill
-          className="object-cover w-full h-full"
-        />
-      </div>
+    <>
+      {/* Desktop VDOgate Section - Exact Figma positioning (1024px+) */}
+      <div id="vdogate-section" className="desktop-exact mobile-hidden tablet-hidden relative w-full bg-white" style={{ height: '832px' }}>
+        {/* Background Frame */}
+        <div
+          className="absolute inset-0"
+          style={{
+            left: '0px',
+            top: '0px',
+            width: '100vw',
+            height: '832px',
+          }}
+        >
+          <Image
+            src="/assets/background_frame.svg"
+            alt=""
+            fill
+            className="object-cover w-full h-full"
+          />
+        </div>
 
       {/* Main Heading */}
       <h2
@@ -438,10 +412,244 @@ const VDOgateSection: React.FC = () => {
             width: '100%',
           }}
         />
+        </div>
       </div>
 
+      {/* Tablet VDOgate Section (768px - 1023px) */}
+      <div className="desktop-hidden mobile-hidden tablet-visible relative w-full bg-white py-16">
+        <div className="responsive-container">
+          {/* Background Frame */}
+          <div className="absolute inset-0 opacity-30">
+            <Image
+              src="/assets/background_frame.svg"
+              alt=""
+              fill
+              className="object-cover w-full h-full"
+            />
+          </div>
 
-    </div>
+          {/* Content Container */}
+          <div className="relative z-10 space-y-12">
+            {/* Header Section */}
+            <div className="text-center space-y-4">
+              <h2 className="text-responsive-4xl font-bold text-black">
+                What is VDOgate?
+              </h2>
+              <p className="text-responsive-lg text-black max-w-3xl mx-auto leading-relaxed">
+                VDOgate is a unique video-first platform designed for freelancers across India
+              </p>
+            </div>
+
+            {/* Feature Cards Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+              {/* Card 1: Upload Videos */}
+              <div className="bg-[rgba(255,255,255,0.1)] rounded-[16px] p-6 border-4 border-[#f7682b] shadow-lg">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 relative flex-shrink-0">
+                    <Image
+                      src="/assets/upload_icon.svg"
+                      alt=""
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-black text-lg font-medium leading-relaxed">
+                    Upload videos in any language to showcase skills
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 2: Attract Clients */}
+              <div className="bg-[rgba(255,255,255,0.1)] rounded-[16px] p-6 border-4 border-[#f7682b] shadow-lg">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 relative flex-shrink-0">
+                    <Image
+                      src="/assets/clients_icon.svg"
+                      alt=""
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-black text-lg font-medium leading-relaxed">
+                    Attract clients directly without middlemen or commissions
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 3: Host Events */}
+              <div className="bg-[rgba(255,255,255,0.1)] rounded-[16px] p-6 border-4 border-[#f7682b] shadow-lg">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 relative flex-shrink-0">
+                    <Image
+                      src="/assets/events_icon.svg"
+                      alt=""
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-black text-lg font-medium leading-relaxed">
+                    Host paid live events and monetize their community
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 4: Grow Following */}
+              <div className="bg-[rgba(255,255,255,0.1)] rounded-[16px] p-6 border-4 border-[#f7682b] shadow-lg">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 relative flex-shrink-0">
+                    <Image
+                      src="/assets/growth_icon.svg"
+                      alt=""
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-black text-lg font-medium leading-relaxed">
+                    Grow fan following beyond Social Media algorithm hurdles
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* App Interface Preview - Exact Desktop Match */}
+            <div className="flex justify-center mt-12">
+              <div
+                className="relative overflow-hidden pointer-events-none"
+                style={{
+                  width: '800px',
+                  height: '163px',
+                }}
+              >
+                <Image
+                  src="/assets/vdogate_app_interface.png"
+                  alt="VDOgate App Interface"
+                  width={800}
+                  height={523}
+                  className="absolute object-cover"
+                  style={{
+                    height: '327.71%',
+                    left: '0px',
+                    top: '0px',
+                    width: '100%',
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile VDOgate Section (320px - 767px) */}
+      <div className="desktop-hidden tablet-hidden mobile-visible relative w-full bg-white py-6">
+        <div className="responsive-container safe-area-inset">
+          {/* Background Frame */}
+          <div className="absolute inset-0 opacity-20">
+            <Image
+              src="/assets/background_frame.svg"
+              alt=""
+              fill
+              className="object-cover w-full h-full"
+            />
+          </div>
+
+          {/* Content Container */}
+          <div className="relative z-10 space-y-8">
+            {/* Header Section */}
+            <div className="text-center space-y-3">
+              <h2 className="text-responsive-3xl font-bold text-black px-4">
+                What is VDOgate?
+              </h2>
+              <p className="text-responsive-base text-black leading-relaxed px-4">
+                VDOgate is a unique video-first platform designed for freelancers across India
+              </p>
+            </div>
+
+            {/* Feature Cards Stack */}
+            <div className="space-y-4 px-4">
+              {/* Card 1: Upload Videos */}
+              <div className="bg-[rgba(255,255,255,0.1)] rounded-[12px] p-4 border-3 border-[#f7682b] shadow-lg">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 relative flex-shrink-0 mt-1">
+                    <Image
+                      src="/assets/upload_icon.svg"
+                      alt=""
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-black text-base font-medium leading-relaxed">
+                    Upload videos in any language to showcase skills
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 2: Attract Clients */}
+              <div className="bg-[rgba(255,255,255,0.1)] rounded-[12px] p-4 border-3 border-[#f7682b] shadow-lg">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 relative flex-shrink-0 mt-1">
+                    <Image
+                      src="/assets/clients_icon.svg"
+                      alt=""
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-black text-base font-medium leading-relaxed">
+                    Attract clients directly without middlemen or commissions
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 3: Host Events */}
+              <div className="bg-[rgba(255,255,255,0.1)] rounded-[12px] p-4 border-3 border-[#f7682b] shadow-lg">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 relative flex-shrink-0 mt-1">
+                    <Image
+                      src="/assets/events_icon.svg"
+                      alt=""
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-black text-base font-medium leading-relaxed">
+                    Host paid live events and monetize their community
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 4: Grow Following */}
+              <div className="bg-[rgba(255,255,255,0.1)] rounded-[12px] p-4 border-3 border-[#f7682b] shadow-lg">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 relative flex-shrink-0 mt-1">
+                    <Image
+                      src="/assets/growth_icon.svg"
+                      alt=""
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <p className="text-black text-base font-medium leading-relaxed">
+                    Grow fan following beyond Social Media algorithm hurdles
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* App Interface Preview */}
+            <div className="px-4">
+              <div className="relative w-full h-48 overflow-hidden rounded-[12px] shadow-lg">
+                <Image
+                  src="/assets/vdogate_app_interface.png"
+                  alt="VDOgate App Interface"
+                  fill
+                  className="object-cover object-center"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
