@@ -596,7 +596,7 @@ const AmbassadorBenefitsSection: React.FC = () => {
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="flex-1">
-                    <p className="text-black font-bold text-base leading-relaxed">
+                    <p className="text-black font-bold text-lg leading-relaxed">
                       Help freelancers showcase skills through videos & events
                     </p>
                   </div>
@@ -618,7 +618,7 @@ const AmbassadorBenefitsSection: React.FC = () => {
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="flex-1">
-                    <p className="text-black font-bold text-base leading-relaxed">
+                    <p className="text-black font-bold text-lg leading-relaxed">
                       Earn monetary rewards for onboarding freelancers on VDOgate
                     </p>
                   </div>
@@ -640,7 +640,7 @@ const AmbassadorBenefitsSection: React.FC = () => {
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="flex-1">
-                    <p className="text-black font-bold text-base leading-relaxed">
+                    <p className="text-black font-bold text-lg leading-relaxed">
                       Be a part of a growing community making waves across India
                     </p>
                   </div>
@@ -662,7 +662,7 @@ const AmbassadorBenefitsSection: React.FC = () => {
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="flex-1">
-                    <p className="text-black font-bold text-base leading-relaxed">
+                    <p className="text-black font-bold text-lg leading-relaxed">
                       Get recognition as a student leader driving the future of freelancing
                     </p>
                   </div>

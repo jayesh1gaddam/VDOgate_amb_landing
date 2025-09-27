@@ -579,7 +579,7 @@ const VDOgateSection: React.FC = () => {
                       style={{ maxWidth: '48px', height: 'auto' }}
                     />
                   </div>
-                  <p className="text-black text-base font-medium leading-relaxed">
+                  <p className="text-black text-lg font-medium leading-relaxed">
                     Upload videos in any language to showcase skills
                   </p>
                 </div>
@@ -598,7 +598,7 @@ const VDOgateSection: React.FC = () => {
                       style={{ maxWidth: '48px', height: 'auto' }}
                     />
                   </div>
-                  <p className="text-black text-base font-medium leading-relaxed">
+                  <p className="text-black text-lg font-medium leading-relaxed">
                     Attract clients directly without middlemen or commissions
                   </p>
                 </div>
@@ -617,7 +617,7 @@ const VDOgateSection: React.FC = () => {
                       style={{ maxWidth: '48px', height: 'auto' }}
                     />
                   </div>
-                  <p className="text-black text-base font-medium leading-relaxed">
+                  <p className="text-black text-lg font-medium leading-relaxed">
                     Host paid live events and monetize their community
                   </p>
                 </div>
@@ -636,7 +636,7 @@ const VDOgateSection: React.FC = () => {
                       style={{ maxWidth: '48px', height: 'auto' }}
                     />
                   </div>
-                  <p className="text-black text-base font-medium leading-relaxed">
+                  <p className="text-black text-lg font-medium leading-relaxed">
                     Grow fan following beyond Social Media algorithm hurdles
                   </p>
                 </div>

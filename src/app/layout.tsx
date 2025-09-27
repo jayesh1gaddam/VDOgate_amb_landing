@@ -17,6 +17,11 @@ export const metadata: Metadata = {
   description: "Join India's Most Exclusive Creator Economy Leadership Program. Become a VDOgate Ambassador and be part of the future of digital content creation.",
   robots: "index, follow",
   keywords: "VDOgate, Ambassador, Creator Economy, India, Leadership Program, Digital Content",
+  icons: {
+    icon: '/icon.png',
+    shortcut: '/favicon.ico',
+    apple: '/icon.png',
+  },
 };
 
 export const viewport = {

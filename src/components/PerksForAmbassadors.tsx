@@ -425,7 +425,7 @@ const PerksForAmbassadors: React.FC = () => {
                     />
                   </div>
                 </div>
-                <p className="text-white font-bold text-base leading-relaxed">
+                <p className="text-white font-bold text-lg leading-relaxed">
                   1-Month Free Trial for every freelancer you bring
                 </p>
               </div>
@@ -442,7 +442,7 @@ const PerksForAmbassadors: React.FC = () => {
                     />
                   </div>
                 </div>
-                <p className="text-white font-bold text-base leading-relaxed">
+                <p className="text-white font-bold text-lg leading-relaxed">
                   Handsome monetary benefits for you
                 </p>
               </div>
@@ -459,7 +459,7 @@ const PerksForAmbassadors: React.FC = () => {
                     />
                   </div>
                 </div>
-                <p className="text-white font-bold text-base leading-relaxed">
+                <p className="text-white font-bold text-lg leading-relaxed">
                   Early access to VDOgate features
                 </p>
               </div>
@@ -476,7 +476,7 @@ const PerksForAmbassadors: React.FC = () => {
                     />
                   </div>
                 </div>
-                <p className="text-white font-bold text-base leading-relaxed">
+                <p className="text-white font-bold text-lg leading-relaxed">
                   Exclusive &quot;Founding Ambassador&quot; badge
                 </p>
               </div>
