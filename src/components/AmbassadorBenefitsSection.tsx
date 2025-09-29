@@ -8,30 +8,6 @@ const AmbassadorBenefitsSection: React.FC = () => {
     <>
       {/* Desktop Ambassador Benefits - Exact Figma positioning (1024px+) */}
       <div className="desktop-exact mobile-hidden tablet-hidden relative w-full bg-white" style={{ height: '713px' }}>
-        {/* Background Image - Updated height */}
-        <div
-          className="absolute overflow-hidden pointer-events-none"
-          style={{
-            left: '0px',
-            top: '-35px',
-            width: '1280px',
-            height: '713px',
-          }}
-        >
-          <Image
-            src="/assets/ambassador_bg.png"
-            alt=""
-            width={1421}
-            height={943}
-            className="absolute object-cover"
-            style={{
-              height: '132.31%',
-              left: '-3.22%',
-              top: '0px',
-              width: '111.1%',
-            }}
-          />
-        </div>
 
       {/* Right Side Decorative Vector */}
       <div
@@ -452,15 +428,6 @@ const AmbassadorBenefitsSection: React.FC = () => {
       {/* Tablet Ambassador Benefits (768px - 1023px) */}
       <div className="desktop-hidden mobile-hidden tablet-visible relative w-full bg-white py-16">
         <div className="responsive-container">
-          {/* Background Image */}
-          <div className="absolute inset-0 opacity-40">
-            <Image
-              src="/assets/ambassador_bg.png"
-              alt=""
-              fill
-              className="object-cover"
-            />
-          </div>
 
           {/* Content Container */}
           <div className="relative z-10 space-y-12">
@@ -568,15 +535,6 @@ const AmbassadorBenefitsSection: React.FC = () => {
       {/* Mobile Ambassador Benefits (320px - 767px) */}
       <div className="desktop-hidden tablet-hidden mobile-visible relative w-full bg-white py-6">
         <div className="responsive-container safe-area-inset">
-          {/* Background Image */}
-          <div className="absolute inset-0 opacity-30">
-            <Image
-              src="/assets/ambassador_bg.png"
-              alt=""
-              fill
-              className="object-cover"
-            />
-          </div>
 
           {/* Content Container */}
           <div className="relative z-10 space-y-8">
