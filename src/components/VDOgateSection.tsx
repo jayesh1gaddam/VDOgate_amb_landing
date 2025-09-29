@@ -174,7 +174,7 @@ const VDOgateSection: React.FC = () => {
                   letterSpacing: '0.28px',
                 }}
               >
-                Upload videos in any language to showcase your skills
+                Upload videos in to showcase your skills
               </p>
             </div>
           </div>
@@ -454,7 +454,7 @@ const VDOgateSection: React.FC = () => {
                     />
                   </div>
                   <p className="text-black text-lg font-medium leading-relaxed">
-                    Upload videos in any language to showcase your skills
+                    Upload videos in to showcase your skills
                   </p>
                 </div>
               </div>
@@ -580,7 +580,7 @@ const VDOgateSection: React.FC = () => {
                     />
                   </div>
                   <p className="text-black text-lg font-medium leading-relaxed">
-                    Upload videos in any language to showcase your skills
+                    Upload videos in to showcase your skills
                   </p>
                 </div>
               </div>
