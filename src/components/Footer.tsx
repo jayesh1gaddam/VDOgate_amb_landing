@@ -24,8 +24,7 @@ const Footer: React.FC = () => {
               />
             </div>
             <p className="text-gray-300 text-sm leading-relaxed max-w-xs">
-              India&apos;s first video-first platform designed for freelancers to showcase skills,
-              attract clients, and build communities.
+              India&apos;s first video-only platform designed for freelancers to showcase skills, grow community, attract clients & EARN
             </p>
             <div className="flex space-x-4">
               {/* Social Media Links */}
@@ -160,8 +159,7 @@ const Footer: React.FC = () => {
                 />
               </div>
               <p className="text-gray-300 text-sm leading-relaxed max-w-md">
-                India&apos;s first video-first platform designed for freelancers to showcase skills,
-                attract clients, and build communities.
+                India&apos;s first video-only platform designed for freelancers to showcase skills, grow community, attract clients & EARN
               </p>
               <div className="flex space-x-4">
                 {/* Social Media Links */}
@@ -258,7 +256,7 @@ const Footer: React.FC = () => {
               />
             </div>
             <p className="text-gray-300 text-sm leading-relaxed px-4">
-              India&apos;s first video-first platform designed for freelancers to showcase skills, attract clients, and build communities.
+              India&apos;s first video-only platform designed for freelancers to showcase skills, grow community, attract clients & EARN
             </p>
             <div className="flex justify-center space-x-4">
               {/* Social Media Links */}

@@ -175,7 +175,7 @@ const AmbassadorBenefitsSection: React.FC = () => {
                 letterSpacing: '0.2px',
               }}
             >
-              Help freelancers showcase skills through videos & events
+              Help freelancers connect with VDOgate
             </p>
             <div
               className="absolute overflow-hidden pointer-events-none"
@@ -325,7 +325,7 @@ const AmbassadorBenefitsSection: React.FC = () => {
                 letterSpacing: '0.2px',
               }}
             >
-              Be a part of a growing community making waves across India
+              Be a part of a exclusive community making waves across India
             </p>
             <div
               className="absolute"
@@ -395,7 +395,7 @@ const AmbassadorBenefitsSection: React.FC = () => {
                 letterSpacing: '0.2px',
               }}
             >
-              Get recognition as a student leader driving the future of freelancing
+              Get recognition as a change leader driving the future of freelancing
             </p>
             <div
               className="absolute overflow-hidden pointer-events-none rounded-br-[20px] rounded-tl-[20px] rounded-tr-[20px]"
@@ -448,7 +448,7 @@ const AmbassadorBenefitsSection: React.FC = () => {
                 <div className="flex items-start gap-4">
                   <div className="flex-1">
                     <p className="text-black font-bold text-lg leading-relaxed">
-                      Help freelancers showcase skills through videos & events
+                      Help freelancers connect with VDOgate
                     </p>
                   </div>
                   <div className="w-20 h-20 relative flex-shrink-0">
@@ -492,7 +492,7 @@ const AmbassadorBenefitsSection: React.FC = () => {
                 <div className="flex items-start gap-4">
                   <div className="flex-1">
                     <p className="text-black font-bold text-lg leading-relaxed">
-                      Be a part of a growing community making waves across India
+                      Be a part of a exclusive community making waves across India
                     </p>
                   </div>
                   <div className="w-20 h-20 relative flex-shrink-0">
@@ -514,7 +514,7 @@ const AmbassadorBenefitsSection: React.FC = () => {
                 <div className="flex items-start gap-4">
                   <div className="flex-1">
                     <p className="text-black font-bold text-lg leading-relaxed">
-                      Get recognition as a student leader driving the future of freelancing
+                      Get recognition as a change leader driving the future of freelancing
                     </p>
                   </div>
                   <div className="w-20 h-20 relative flex-shrink-0">
@@ -555,7 +555,7 @@ const AmbassadorBenefitsSection: React.FC = () => {
                 <div className="flex items-start gap-3">
                   <div className="flex-1">
                     <p className="text-black font-bold text-lg leading-relaxed">
-                      Help freelancers showcase skills through videos & events
+                      Help freelancers connect with VDOgate
                     </p>
                   </div>
                   <div className="w-20 h-20 relative flex-shrink-0">
@@ -599,7 +599,7 @@ const AmbassadorBenefitsSection: React.FC = () => {
                 <div className="flex items-start gap-3">
                   <div className="flex-1">
                     <p className="text-black font-bold text-lg leading-relaxed">
-                      Be a part of a growing community making waves across India
+                      Be a part of a exclusive community making waves across India
                     </p>
                   </div>
                   <div className="w-20 h-20 relative flex-shrink-0">
@@ -621,7 +621,7 @@ const AmbassadorBenefitsSection: React.FC = () => {
                 <div className="flex items-start gap-3">
                   <div className="flex-1">
                     <p className="text-black font-bold text-lg leading-relaxed">
-                      Get recognition as a student leader driving the future of freelancing
+                      Get recognition as a change leader driving the future of freelancing
                     </p>
                   </div>
                   <div className="w-20 h-20 relative flex-shrink-0">

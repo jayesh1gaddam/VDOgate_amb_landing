@@ -58,7 +58,7 @@ const VDOgateSection: React.FC = () => {
           letterSpacing: '0.22px',
         }}
       >
-        VDOgate is a unique video-first platform designed for freelancers across India
+        VDOgate is a unique platform designed for freelancers to earn across India
       </p>
 
       {/* Decorative Elements */}
@@ -174,7 +174,7 @@ const VDOgateSection: React.FC = () => {
                   letterSpacing: '0.28px',
                 }}
               >
-                Upload videos in any language to showcase skills
+                Upload videos in any language to showcase your skills
               </p>
             </div>
           </div>
@@ -263,7 +263,7 @@ const VDOgateSection: React.FC = () => {
                   letterSpacing: '0.28px',
                 }}
               >
-                Host paid live events and monetize their community
+                Grow fan following beyond Social Media algorithm hurdles & ad clutter
               </p>
             </div>
           </div>
@@ -303,7 +303,7 @@ const VDOgateSection: React.FC = () => {
                   letterSpacing: '0.28px',
                 }}
               >
-                Grow fan following beyond Social Media algorithm hurdles
+                Host paid live events and monetize their community
               </p>
             </div>
           </div>
@@ -436,7 +436,7 @@ const VDOgateSection: React.FC = () => {
                 What is VDOgate?
               </h2>
               <p className="text-responsive-lg text-black max-w-3xl mx-auto leading-relaxed">
-                VDOgate is a unique video-first platform designed for freelancers across India
+                VDOgate is a unique platform designed for freelancers to earn across India
               </p>
             </div>
 
@@ -454,7 +454,7 @@ const VDOgateSection: React.FC = () => {
                     />
                   </div>
                   <p className="text-black text-lg font-medium leading-relaxed">
-                    Upload videos in any language to showcase skills
+                    Upload videos in any language to showcase your skills
                   </p>
                 </div>
               </div>
@@ -488,7 +488,7 @@ const VDOgateSection: React.FC = () => {
                     />
                   </div>
                   <p className="text-black text-lg font-medium leading-relaxed">
-                    Host paid live events and monetize their community
+                    Grow fan following beyond Social Media algorithm hurdles & ad clutter
                   </p>
                 </div>
               </div>
@@ -505,7 +505,7 @@ const VDOgateSection: React.FC = () => {
                     />
                   </div>
                   <p className="text-black text-lg font-medium leading-relaxed">
-                    Grow fan following beyond Social Media algorithm hurdles
+                    Host paid live events and monetize their community
                   </p>
                 </div>
               </div>
@@ -560,7 +560,7 @@ const VDOgateSection: React.FC = () => {
                 What is VDOgate?
               </h2>
               <p className="text-responsive-base text-black leading-relaxed px-4">
-                VDOgate is a unique video-first platform designed for freelancers across India
+                VDOgate is a unique platform designed for freelancers to earn across India
               </p>
             </div>
 
@@ -580,7 +580,7 @@ const VDOgateSection: React.FC = () => {
                     />
                   </div>
                   <p className="text-black text-lg font-medium leading-relaxed">
-                    Upload videos in any language to showcase skills
+                    Upload videos in any language to showcase your skills
                   </p>
                 </div>
               </div>
@@ -618,7 +618,7 @@ const VDOgateSection: React.FC = () => {
                     />
                   </div>
                   <p className="text-black text-lg font-medium leading-relaxed">
-                    Host paid live events and monetize their community
+                    Grow fan following beyond Social Media algorithm hurdles & ad clutter
                   </p>
                 </div>
               </div>
@@ -637,7 +637,7 @@ const VDOgateSection: React.FC = () => {
                     />
                   </div>
                   <p className="text-black text-lg font-medium leading-relaxed">
-                    Grow fan following beyond Social Media algorithm hurdles
+                    Host paid live events and monetize their community
                   </p>
                 </div>
               </div>
